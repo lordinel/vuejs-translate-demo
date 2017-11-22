@@ -1,15 +1,15 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Vue from 'vue';
+import Router from 'vue-router';
 
-Vue.use(Router)
+function load(component) {
+  return () => import(`@/components/${component}.vue`);
+}
+
+Vue.use(Router);
 
 export default new Router({
   routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
+    { path: '/', component: load('HelloWorld') },
+    { path: '/vue-i18n', component: load('VueI18n') }
   ]
-})
+});

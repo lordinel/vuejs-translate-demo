@@ -1,0 +1,11 @@
+{
+    "hello-world": "Hello world!",
+    "formatted-hello-world": "Hello <span style=\"color: red\">world</span>!",
+    "hi-user-welcome": "Hi, {user}. Welcome.",
+    "colors": {
+        "red": "Red",
+        "blue": "Blue",
+        "green": "Green"
+    },
+    "fallback-message": "Fallback message"
+}
