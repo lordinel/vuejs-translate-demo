@@ -43,19 +43,19 @@
                 <tr>
                     <td>Variable substitution</td>
                     <td>
-                        $t('hi-user-welcome', { user: 'John' })<br>
-                        <small>Where 'hi-user-welcome' = "Hi, {user}. Welcome."</small>
+                        $t('hi-user-welcome-double', { user: 'John' })<br>
+                        <small v-pre>Where 'hi-user-welcome-double' = "Hi, {{ user }}. Welcome."</small>
                     </td>
-                    <td>{{ $t('hi-user-welcome', { user: 'John' }) }}</td>
+                    <td>{{ $t('hi-user-welcome-double', { user: 'John' }) }}</td>
                 </tr>
                 
                 <tr>
                     <td>Variable substitution with tag</td>
                     <td>
-                        $t('hi-user-welcome', { user: boldName })<br>
+                        $t('hi-user-welcome-double', { user: boldName })<br>
                         <small>Where boldName = '&lt;b&gt;John&lt;/b&gt;'</small>
                     </td>
-                    <td>{{ $t('hi-user-welcome', { user: boldName }) }}</td>
+                    <td>{{ $t('hi-user-welcome-double', { user: boldName }) }}</td>
                 </tr>
             
                 <tr>
@@ -72,8 +72,8 @@
             
                 <tr>
                     <td>Custom directive</td>
-                    <td>v-t="'hello-world'"</td>
-                    <td><span v-t="'hello-world'"></span></td>
+                    <td>Not supported</td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>

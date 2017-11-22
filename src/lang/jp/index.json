@@ -2,6 +2,7 @@
     "hello-world": "こんにちは世界！",
     "formatted-hello-world": "こんにちは<span style=\"color: red\">世界</span>！",
     "hi-user-welcome": "こんにちは, {user}. ようこそ.",
+    "hi-user-welcome-double": "こんにちは, {{ user }}. ようこそ.",
     "colors": {
         "red": "赤",
         "blue": "青",
