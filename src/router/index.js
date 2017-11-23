@@ -9,7 +9,7 @@ Vue.use(Router);
 
 export default new Router({
   routes: [
-    { path: '/', component: load('HelloWorld') },
+    { path: '/', component: load('Index') },
     { path: '/vue-i18n', component: load('VueI18n') },
     { path: '/vuex-i18n', component: load('VuexI18n') },
     { path: '/vue-i18next', component: load('VueI18next') },
