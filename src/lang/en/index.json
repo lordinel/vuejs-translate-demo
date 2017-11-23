@@ -3,6 +3,7 @@
     "formatted-hello-world": "Hello <span style=\"color: red\">world</span>!",
     "hi-user-welcome": "Hi, {user}. Welcome.",
     "hi-user-welcome-double": "Hi, {{ user }}. Welcome.",
+    "hi-user-welcome-percent": "Hi, %{ user }. Welcome.",
     "colors": {
         "red": "Red",
         "blue": "Blue",
@@ -12,5 +13,7 @@
     "item-count_plural": "{{ count }} items",
     "item-count-pipe": "{count} item | {count} items",
     "item-count-colon": "{count} item ::: {count} items",
+    "item-count-percent": "%{ count } item",
+    "item-count-percent_plural": "%{ count } items",
     "fallback-message": "Fallback message"
 }

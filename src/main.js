@@ -20,7 +20,7 @@ const i18n = new VueI18n({
 
 // vuex-18n
 // ------------------------------------------
-// src/main.js
+/*// src/main.js
 import Vue from 'vue';
 import Vuex from 'vuex';
 import VuexI18n from 'vuex-i18n';
@@ -38,7 +38,7 @@ Vue.i18n.add('en', messages.en);
 Vue.i18n.add('jp', messages.jp);
 
 // set locale
-Vue.i18n.set('jp');
+Vue.i18n.set('jp');*/
 // ------------------------------------------
 
 
@@ -67,6 +67,22 @@ const i18n = new VueI18Next(i18next);*/
 // ------------------------------------------
 
 
+// vue-18next
+// ------------------------------------------
+// src/main.js
+import Vue from 'vue';
+import VueGettext from 'vue-gettext';
+
+// import language strings
+import messages from './lang';
+
+Vue.use(VueGettext, {
+    translations: messages,
+    defaultLanguage: 'jp'
+});
+// ------------------------------------------
+
+
 import App from './App';
 import router from './router';
 
@@ -76,7 +92,7 @@ Vue.config.productionTip = false;
 new Vue({
   el: '#app',
   router,
-  i18n,   // include i18n in Vue instantiation
+  //i18n,   // include i18n in Vue instantiation
   template: '<App/>',
   components: { App }
 });

@@ -3,6 +3,7 @@
     "formatted-hello-world": "こんにちは<span style=\"color: red\">世界</span>！",
     "hi-user-welcome": "こんにちは, {user}. ようこそ.",
     "hi-user-welcome-double": "こんにちは, {{ user }}. ようこそ.",
+    "hi-user-welcome-percent": "こんにちは, %{ user }. ようこそ.",
     "colors": {
         "red": "赤",
         "blue": "青",
@@ -11,5 +12,7 @@
     "item-count": "{{ count }} 項目",
     "item-count_plural": "{{ count }} アイテム",
     "item-count-pipe": "{count} 項目 | {count} アイテム",
-    "item-count-colon": "{count} 項目 ::: {count} アイテム"
+    "item-count-colon": "{count} 項目 ::: {count} アイテム",
+    "item-count-percent": "%{ count } 項目",
+    "item-count-percent_plural": "%{ count } アイテム"
 }
