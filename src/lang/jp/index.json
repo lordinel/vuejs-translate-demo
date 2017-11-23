@@ -7,5 +7,9 @@
         "red": "赤",
         "blue": "青",
         "green": "緑"
-    }
+    },
+    "item-count": "{{ count }} 項目",
+    "item-count_plural": "{{ count }} アイテム",
+    "item-count-pipe": "{count} 項目 | {count} アイテム",
+    "item-count-colon": "{count} 項目 ::: {count} アイテム"
 }

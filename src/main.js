@@ -17,9 +17,34 @@ const i18n = new VueI18n({
 });*/
 // ------------------------------------------
 
-// vue-18next
+
+// vuex-18n
 // ------------------------------------------
 // src/main.js
+import Vue from 'vue';
+import Vuex from 'vuex';
+import VuexI18n from 'vuex-i18n';
+
+// initialize Vuex store
+Vue.use(Vuex);
+const i18n = new Vuex.Store();
+Vue.use(VuexI18n.plugin, i18n);
+
+// import language strings
+import messages from './lang';
+
+// add translations
+Vue.i18n.add('en', messages.en);
+Vue.i18n.add('jp', messages.jp);
+
+// set locale
+Vue.i18n.set('jp');
+// ------------------------------------------
+
+
+// vue-18next
+// ------------------------------------------
+/*// src/main.js
 import Vue from 'vue';
 import i18next from 'i18next';
 import VueI18Next from '@panter/vue-i18next';
@@ -38,7 +63,7 @@ i18next.init({
     }
 });
 
-const i18n = new VueI18Next(i18next);
+const i18n = new VueI18Next(i18next);*/
 // ------------------------------------------
 
 

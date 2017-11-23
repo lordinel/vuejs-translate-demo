@@ -57,10 +57,25 @@
                     </td>
                     <td>{{ $t('hi-user-welcome', { user: boldName }) }}</td>
                 </tr>
+                
+                <tr>
+                    <td>Pluralization</td>
+                    <td>
+                        $tc('item-count-pipe', 1, { count: 1 })<br>
+                        $tc('item-count-pipe', 2, { count: 2 })
+                    </td>
+                    <td>
+                        {{ $tc('item-count-pipe', 1, { count: 1 }) }}<br>
+                        {{ $tc('item-count-pipe', 2, { count: 2 }) }}
+                    </td>
+                </tr>
             
                 <tr>
-                    <td>Fallback message (only existing in en)</td>
-                    <td>$t('fallback-message')</td>
+                    <td>Fallback message</td>
+                    <td>
+                        $t('fallback-message')<br>
+                        <small>Where 'fallback-message' is existing only in 'en'</small>
+                    </td>
                     <td>{{ $t('fallback-message') }}</td>
                 </tr>
             

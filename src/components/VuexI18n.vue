@@ -43,31 +43,30 @@
                 <tr>
                     <td>Variable substitution</td>
                     <td>
-                        $t('hi-user-welcome-double', { user: 'John' })<br>
-                        <small v-pre>Where 'hi-user-welcome-double' = "Hi, {{ user }}. Welcome."</small>
+                        $t('hi-user-welcome', { user: 'John' })<br>
+                        <small v-pre>Where 'hi-user-welcome' = "Hi, {user}. Welcome."</small>
                     </td>
-                    <td>{{ $t('hi-user-welcome-double', { user: 'John' }) }}</td>
+                    <td>{{ $t('hi-user-welcome', { user: 'John' }) }}</td>
                 </tr>
                 
                 <tr>
                     <td>Variable substitution with tag</td>
                     <td>
-                        $t('hi-user-welcome-double', { user: boldName })<br>
+                        $t('hi-user-welcome', { user: boldName })<br>
                         <small>Where boldName = '&lt;b&gt;John&lt;/b&gt;'</small>
                     </td>
-                    <td>{{ $t('hi-user-welcome-double', { user: boldName }) }}</td>
+                    <td>{{ $t('hi-user-welcome', { user: boldName }) }}</td>
                 </tr>
                 
                 <tr>
                     <td>Pluralization</td>
                     <td>
-                        $t('item-count', { count: 1 })<br>
-                        $t('item-count', { count: 2 })<br>
-                        <small>Works only in 'en'</small>
+                        $t('item-count-colon', { count: 1 }, 1)<br>
+                        $t('item-count-colon', { count: 2 }, 2)
                     </td>
                     <td>
-                        {{ $t('item-count', { count: 1 }) }}<br>
-                        {{ $t('item-count', { count: 2 }) }}
+                        {{ $t('item-count-colon', { count: 1 }, 1) }}<br>
+                        {{ $t('item-count-colon', { count: 2 }, 2) }}
                     </td>
                 </tr>
             
@@ -75,7 +74,7 @@
                     <td>Fallback message</td>
                     <td>
                         $t('fallback-message')<br>
-                        <small>Where 'fallback-message' is existing only in 'en'</small>
+                        <small>'fallback-message' is existing on in 'en'</small>
                     </td>
                     <td>{{ $t('fallback-message') }}</td>
                 </tr>
@@ -88,8 +87,8 @@
             
                 <tr>
                     <td>Custom directive</td>
-                    <td>Not supported</td>
-                    <td></td>
+                    <td v-pre>{{ 'hello-world' | translate }}</td>
+                    <td>{{ 'hello-world' | translate }}</span></td>
                 </tr>
             </tbody>
         </table>

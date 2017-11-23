@@ -8,5 +8,9 @@
         "blue": "Blue",
         "green": "Green"
     },
+    "item-count": "{{ count }} item",
+    "item-count_plural": "{{ count }} items",
+    "item-count-pipe": "{count} item | {count} items",
+    "item-count-colon": "{count} item ::: {count} items",
     "fallback-message": "Fallback message"
 }
