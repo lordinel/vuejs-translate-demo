@@ -13,6 +13,7 @@ export default new Router({
     { path: '/vue-i18n', component: load('VueI18n') },
     { path: '/vuex-i18n', component: load('VuexI18n') },
     { path: '/vue-i18next', component: load('VueI18next') },
-    { path: '/vue-gettext', component: load('VueGettext') }
+    { path: '/vue-gettext', component: load('VueGettext') },
+    { path: '/vue-polyglot', component: load('VuePolyglot') }
   ]
 });
